@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width, initial-scale-1.0" />
+
+    <!-- font awsome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- MAIN CSS-->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Portfolio Website</title>
+  </head>
+
+  <body>
+    <!-- header design -->
+    <header class="header">
+      <a href="#" class="logo"><span class="name">H</span>arry</a>
+
+      <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- HOME SECTION DESIGN -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi<span class="wave">👋</span>, Myself</h3>
+            <h1>Harry Patnaik</hi>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>I am deeply intrigued by the dynamic intersection of web development and machine learning, and I am eager to leverage my passion for both disciplines to create innovative solutions that seamlessly integrate advanced ML techniques into web applications, enhancing user experiences and pushing the boundaries of technology</p>
+
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+
+            <a href="pdf/resume.pdf" download class="btn">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="images/photo.png" class="MyPic">
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION DESIGN -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/photo.png" class="mypic2">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">ABOUT <span>Me</span></h2>
+            <h3>Frontend Developer</h3>          
+            
+            <div class="detailsaboutme"></div>
+
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="toggleTab(event, 'skills')">Skills</p>
+                <p class="tab-links" onclick="toggleTab(event, 'experience')">Experience</p>
+                <p class="tab-links" onclick="toggleTab(event, 'education')">Education</p>
+            </div>
+            
+            <div class="tab-contents">
+                <ul id="skills" class="active">
+                    <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                    <li><span>Web Development</span><br>Web app Development</li>
+                    <li><span>Data Analysis</span><br>Perform EDA</li>
+                </ul>
+                <ul id="experience">
+                    <li><span>Intern</span><br>AND interns <br>2024 - 2024</li>
+                    <li><span>Intern</span><br>AND interns <br>2024 - 2024</li>
+                    <li><span>Intern</span><br>AND interns <br>2024 - 2024</li>
+                </ul>
+                <ul id="education">
+                    <li><span>Bachelors in computer science</span><br>GITAM University<br>2021 - 2025</li>
+                    <li><span>Intermediate</span><br>FIITJEE junior college<br>2018 - 2020</li>
+                    <li><span>Schooling</span><br>Sri Sathya Sai Vidya Vihar<br>2018 - 2004</li>
+                </ul>
+            </div>
+            
+        </div>
+
+
+    </section>
+
+
+
+    <!-- SERVICES SECTION DESIGN -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus qui quis voluptatem sit voluptate quibusdam? Explicabo quibusdam nesciunt laboriosam veniam?</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-palette"></i>
+                <h3>UI/UX Designing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus qui quis voluptatem sit voluptate quibusdam? Explicabo quibusdam nesciunt laboriosam veniam?</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-brands fa-android"></i>
+                <h3>App Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus qui quis voluptatem sit voluptate quibusdam? Explicabo quibusdam nesciunt laboriosam veniam?</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION DESIGN -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/1.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/2.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/3.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/4.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/5.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/6.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+            <div class="portfolio-box" >
+                <img src="images/1.png" class="hidden">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+            <div class="portfolio-box" >
+                <img src="images/2.png" class="hidden">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+            <div class="portfolio-box" >
+                <img src="images/3.png" class="hidden">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+            <div class="portfolio-box" >
+                <img src="images/4.png" class="hidden">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+            <div class="portfolio-box" >
+                <img src="images/5.png" class="hidden">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+            <div class="portfolio-box" >
+                <img src="images/6.png" class="hidden">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+            <div class="portfolio-box" >
+                <img src="images/1.png" class="hidden">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+            <div class="portfolio-box" >
+                <img src="images/2.png" class="hidden">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+            <div class="portfolio-box" >
+                <img src="images/3.png" class="hidden">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+            <div class="portfolio-box" >
+                <img src="images/4.png" class="hidden">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+            <div class="portfolio-box" >
+                <img src="images/5.png" class="hidden">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+            <div class="portfolio-box" >
+                <img src="images/6.png" class="hidden">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+        </div>
+
+        <button id="showMoreBtn" class="show-more-btn">Show More</button>
+        <button id="showLessBtn" class="show-more-btn hidden">Show Less</button>
+    </section>
+    
+
+    <!-- CONTACT SECTION DESIGN -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="#" name="submit-to-google-sheet">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" name="name">
+                <input type="email" placeholder="Email Address" name="email">
+            </div>
+            
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number" name="phoneNo">
+                <input type="text" placeholder="Email Subject" name="emailSubject">
+            </div>
+            <div class="input-box">
+                <input type="text" name="message" placeholder="Your Message" style="width: 100%;">
+            </div>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <section class="location" id="location">
+        <h2 class="heading" style="margin-bottom:30px;">MY <span>location</span></h2>
+
+        <div style="display: flex;
+        align-items: center;
+        justify-content: center;">        
+            <iframe style="border-radius: 10px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243207.75285237955!2d83.09777780326661!3d17.73893044731766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39431389e6973f%3A0x92d9c20395498468!2sVisakhapatnam%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1712505902575!5m2!1sen!2sin" width="1200" height="600" style="border:0;" allowfullscreen="yes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+        </div>
+
+    </section>
+
+    
+
+    <!-- FOOTER DESIGN -->
+    <footer class="footer">
+        <div class="footer-icon">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+    </footer> 
+
+    <!-- scroll reveal JS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- typed JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- main JS -->
+    <script src="main.js"></script>
+  </body>
+</html>
